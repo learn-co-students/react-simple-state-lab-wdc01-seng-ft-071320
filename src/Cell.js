@@ -7,6 +7,10 @@ export default class Cell extends Component{
             color: props.value
         }
     }
+    // equivalent as above
+    // state = {
+    //     color: this.props.value
+    // }
 
     changeColor = () => {
         this.setState({
@@ -14,6 +18,7 @@ export default class Cell extends Component{
         })
     }
     render(){
+        debugger
         return (
             <div 
             className = "cell" 
@@ -23,3 +28,4 @@ export default class Cell extends Component{
         )
     }
 }
+
